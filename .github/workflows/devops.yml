@@ -44,7 +44,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/flaskusersapp:${{ github.sha }
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/flaskusersapp:${{ github.sha }}
   Deploy:
     name: Deploy
     runs-on: ubuntu-latest
